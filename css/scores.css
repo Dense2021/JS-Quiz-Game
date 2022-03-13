@@ -1,0 +1,33 @@
+body{
+    color: #ffffff;
+}
+
+#high-score-list{margin-bottom: 4rem;}
+
+.high-score{
+    color: #000000;
+    font-size: 2rem;
+    width: 30rem;
+    padding: 0.8rem;
+    margin-bottom: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2px;
+    background: #ffffff;
+    /* background: #f0efef; */
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 105, 235, 0.6);
+}
+
+.high-score:hover{
+    transform: scale(1.5);
+    transition: transform 300ms;
+}
+
+span{font-weight: bolder;}
+
+@media screen and (max-width:450px){
+    .high-score:hover{
+        transform: scale(1.08);
+        transition: transform 300ms;
+    }
+}

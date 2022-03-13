@@ -1,0 +1,90 @@
+:root{
+    --blue: rgb(18, 93, 255);
+    --lime: rgb(11, 223, 36);
+}
+
+body{color: #ffffff;}
+
+#game{padding: 0rem 3%;}
+
+.choice-container{
+    font-size: 2rem;
+    display: flex;
+    width: 100%;
+    min-width: 90rem;
+    margin-bottom: 0.8rem;
+    border-radius: 4px;
+    background: var(--blue);
+}
+
+.choice-container:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    transform: transform 100ms;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(0, 103, 247, 0.5);
+}
+
+.choice-prefix{
+    color: #ffffff;
+    padding: 2rem 2.5rem;
+}
+
+.choice-text{
+    width: 100%;
+    padding: 2rem;
+}
+
+.correct{background: linear-gradient(32deg, rgb(11, 222, 36) 0%, rgb(41, 232, 111) 100%);}
+.correct:hover{ box-shadow: 0 0.4rem 1.4rem 0rem rgba(41, 232, 111, 0.6);}
+
+.incorrect{background: linear-gradient(32deg, rgba(230, 29, 29) 0%, rgba(224, 11, 11) 100%);}
+.incorrect:hover{ box-shadow: 0 0.4rem 1.4rem 0.2rem rgba(224, 11, 11, 0.6);}
+
+/* Heads up Display */
+#hud{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.hud-main-text{
+    text-align: center;
+}
+
+#progress-bar{
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid var(--lime);
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progress-barfull{
+    height: 100%;
+    background: var(--lime);
+    width: 0%;
+}
+
+
+@media screen and (max-width:991px){
+    .choice-container{
+        min-width: 80rem;
+    }
+}
+
+@media screen and (max-width:768px){
+    .choice-container{
+        min-width: 50rem;
+    }
+}
+
+@media screen and (max-width:450px){
+    .choice-container{
+        min-width: 30rem;
+    }
+}
